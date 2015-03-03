@@ -1,0 +1,16 @@
+Resultados de ejecutar los comandos exigidos:
+
+javi@ubuntu:~$ apache2 -v
+Server version: Apache/2.2.22 (Ubuntu)
+Server built:   Jul 22 2014 14:37:02
+
+
+javi@ubuntu:~$ ps aux|grep apache
+root      1241  0.0  1.7  34044  6900 ?        Ss   08:31   0:00 /usr/sbin/apache2 -k start
+www-data  1295  0.0  0.9  34068  3768 ?        S    08:31   0:00 /usr/sbin/apache2 -k start
+www-data  1296  0.0  0.9  34068  3768 ?        S    08:31   0:00 /usr/sbin/apache2 -k start
+www-data  1297  0.0  0.9  34068  3768 ?        S    08:31   0:00 /usr/sbin/apache2 -k start
+www-data  1298  0.0  0.9  34068  3768 ?        S    08:31   0:00 /usr/sbin/apache2 -k start
+www-data  1299  0.0  0.9  34068  3768 ?        S    08:31   0:00 /usr/sbin/apache2 -k start
+javi      2134  0.0  0.2   4408   824 pts/0    D+   08:42   0:00 grep --color=auto apache
+
