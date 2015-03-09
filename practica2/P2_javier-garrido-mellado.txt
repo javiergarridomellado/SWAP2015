@@ -1,0 +1,16 @@
+Practica realizada por Francisco Javier Garrido Mellado y Hugo Barzano Cruz
+
+En esta segunda práctica se han utilizado los siguientes comandos:
+
+-Para evitar tener que identificarnos, se genera clave publica y se copia a la maquina principal ( podria haberse hecho directamente como root):
+
+sudo ssh-keygen -t dsa
+
+ssh-copy-id -i .ssh/id_dsa.pub root@192.168.2.128
+
+
+Para el automatizado del archivo /var/www/ se ha añadido al fichero /etc/crontab la siguiente linea:
+
+52 * * * * root rsync -avz -e ssh root@192.168.2.128:/var/www/ /var/www/
+
+Esto hará que cada hora se copie la carpeta /var/www/ en el equipo de respaldo.
