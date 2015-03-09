@@ -1,3 +1,5 @@
+Practica realizada por Francisco Javier Garrido Mellado y Hugo Barzano Cruz
+
 Resultados de ejecutar los comandos exigidos:
 
 javi@ubuntu:~$ apache2 -v
