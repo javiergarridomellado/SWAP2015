@@ -1,0 +1,15 @@
+La capacidad para dar soporte a un número creciente de usuarios es:
+-a)Una granja web.
+-b)Sinónimo de disponibilidad.
+-c)Un sitio web mal planificado.
+-d)Sinonimo de escalabilidad.
+
+Respuesta: d
+
+Lo mas recomendable para tener un sitio web eficiente donde sus principales caracteristicas tecnicas son la disponibilidad y la escalabilidad:
+-a)Implementar un DMZ tradicional.
+-b)Montar un único servidor web.
+-c)Disponer de una granja web.
+-d)Invertir en una buena CPU.
+
+Respuesta: c
