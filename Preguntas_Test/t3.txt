@@ -1,0 +1,17 @@
+Para que el servidor web ofrezca unas prestaciones optimas y por tanto la calidad del servicio que se ofrece sea la adecuada es necesario (entre otras características ):
+
+a) Disponer de un buen ancho de banda de conexión a Internet.
+b) Poder filtrar y bloquear paquetes.
+c) Balancear la carga entre los servidores.
+d) Todas son correctas.
+
+Respuesta: d
+
+El uso de NAT en la granja web es:
+
+a)Un factor importante para garantizar la calidad del servicio y su seguridad.
+b)Un factor para que el cortafuegos sea un posible cuello de botella.
+c)Un factor de disponibilidad.
+d)Ninguna es correcta.
+
+Respuesta: a
