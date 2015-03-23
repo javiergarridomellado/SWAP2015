@@ -4,17 +4,17 @@
 
 **Configuracion:** Para la configuración de los balanceadores nginx y haproxy se ha procedido a la instalación de cada uno de ellos en una maquina distinta.
 
-Datos a tener en cuenta: 
+**Datos a tener en cuenta:** 
 - IP de la máquina principal 192.168.2.128
 - IP de la máquina de respaldo 192.168.2.129 
 
--Configuración de la máquina NGINX
+##-Configuración de la máquina NGINX
 En esta máquina se ha instalado un Ubuntu Server 12.04 con lo básico, unicamente se ha instalado los paquetes SSH por si en un futuro fuese necesario.Posteriormente se importa la clave del repositorio de la siguiente manera:
 
-cd /tmp/
-wget http://nginx.org/keys/nginx_signing.key
-apt-key add /tmp/nginx_signing.key
-rm -f /tmp/nginx_signing.key
+	cd /tmp/
+	wget http://nginx.org/keys/nginx_signing.key
+	apt-key add /tmp/nginx_signing.key
+	rm -f /tmp/nginx_signing.key
 
 A continuación he escrito directamente en /apt/source.list usando vi las siguientes lineas para que admita los repositorios de estas direcciones cuando se proceda a la instalación de nginx:
 
