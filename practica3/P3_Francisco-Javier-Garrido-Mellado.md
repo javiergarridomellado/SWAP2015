@@ -18,13 +18,13 @@ En esta máquina se ha instalado un Ubuntu Server 12.04 con lo básico, unicamen
 
 A continuación he escrito directamente en /apt/source.list usando vi las siguientes lineas para que admita los repositorios de estas direcciones cuando se proceda a la instalación de nginx:
 
-deb http://nginx.org/packages/ubuntu/ lucid nginx
-deb-src http://nginx.org/packages/ubuntu/ lucid nginx
+	deb http://nginx.org/packages/ubuntu/ lucid nginx
+	deb-src http://nginx.org/packages/ubuntu/ lucid nginx
 
 Y se procede a la instalación haciendo previamente un update:
 
-apt-get update
-apt-get install nginx
+	apt-get update
+	apt-get install nginx
 
 Hecho esto se configura el archivo /etc/nginx/conf.d/default.conf , las lineas de este archivo para mi máquina son las siguientes:
 
