@@ -57,6 +57,7 @@ Despues de la configuración se ha procedido a reiniciar el servicio ejecutando 
 
 Se ha comprobado usando **curl http://192.168.2.130/** (direccion de la máquina balanceadora nginx)
 
+##-Configuración de la máquina HAPROXY
 Para la configuración de la máquina balanceadora haproxy se ha procedido creando al igual que antes una nueva máquina con un Ubuntu Server unicamente con los paquetes SSH, para la instalación de haproxy se ha ejecutado la orden:
 
 		apt-get install haproxy
