@@ -1,5 +1,6 @@
 **T3.1.Buscar con qué órdenes de terminal o herramientas gráficas podemos configurar bajo Windows y bajo Linux el enrutamiento del tráfico de un servidor para pasar el tráfico desde una subred a otra.**
-En *Linux* encontramos el comando *echo "1" > /proc/sys/net/ipv4/ip_forward*  para activar el enrutamiento, este se activa al poner dicha variable a 1, acto seguido habría que configurar el filtrado de paquetes para que acepte el redireccionamiento desde dentro hacia fuera de nuestra red. Suele configurarse utilizando dos tarjetas de red y empleandose reglas de tipo iptables como por ejemplo:
+
+- En *Linux* encontramos el comando *echo "1" > /proc/sys/net/ipv4/ip_forward*  para activar el enrutamiento, este se activa al poner dicha variable a 1, acto seguido habría que configurar el filtrado de paquetes para que acepte el redireccionamiento desde dentro hacia fuera de nuestra red. Suele configurarse utilizando dos tarjetas de red y empleandose reglas de tipo iptables como por ejemplo:
 	// Haciendo NAT en el servidor
 		sudo iptables -A FORWARD -j ACCEPT
 		sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j MASQUERADE
@@ -11,7 +12,7 @@ Para *Windows* nuevamente es recomendable el uso de dos tarjetas de red y para s
 
 **T3.2.Buscar con qué órdenes de terminal o herramientas gráficas podemos configurar bajo Windows y bajo Linux el filtrado y bloqueo de paquetes.**
 
-Como comenté en la anterior pregunta, bajo Linux/Unix se encuentra las ordenes *iptables* e incluso puede optarse por herramientas gráficas como *ufw* ( el más conocido). Un breve resumen de los comandos *iptables* es el siguiente:
+- Como comenté en la anterior pregunta, bajo Linux/Unix se encuentra las ordenes *iptables* e incluso puede optarse por herramientas gráficas como *ufw* ( el más conocido). Un breve resumen de los comandos *iptables* es el siguiente:
 
 		iptables –F : flush de reglas
 		iptables –L : listado de reglas que se estan aplicando
