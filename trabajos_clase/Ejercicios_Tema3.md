@@ -19,7 +19,7 @@ Para *Windows* nuevamente es recomendable el uso de dos tarjetas de red y para s
 		iptables –A : añadir regla
 		iptables –D : borrar una regla o varias, etc…
 
-En *Windows* según su página oficial accediendo a *Configuración del equipo\Directivas\Configuración de Windows\Configuración de seguridad\Firewall de Windows con seguridad avanzada\Firewall de Windows con seguridad avanzada* se puede configurar manualmente el filtrado y bloqueo de paquetes.En relación a comandos realmente no viene claro su uso, he visto que puede usarse comandos como *netsh* y *firewall* pero no detallan de manera notable en la web oficial su uso.
+En *Windows* según su página oficial accediendo a *Configuración del equipo\Directivas\Configuración de Windows\Configuración de seguridad\Firewall de Windows con seguridad avanzada\Firewall de Windows* se puede configurar manualmente el filtrado y bloqueo de paquetes.En relación a comandos realmente no viene claro su uso, he visto que puede usarse comandos como *netsh* y *firewall* pero no detallan de manera notable en la web oficial su uso.
 
 
 
