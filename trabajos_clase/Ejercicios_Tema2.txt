@@ -5,7 +5,7 @@ Calcular la disponibilidad total del sistema suponiendo que hay 3 elementos de c
 Tenemos de partida la ecuacion de la disponibilidad para cuando replicamos componentes
 As = Acn-1 + ( (1 – Acn-1) * Acn )
 
-Partiendo que ya tenemos la disponibilidad de los componentes con una replica añadida calculo con una segunda replica.
+Partiendo que ya tenemos la disponibilidad de los componentes con una réplica añadida calculo con una segunda réplica.
 
 Con un componente:
 
@@ -48,9 +48,9 @@ El sistema tiene una disponibilidad de 99.6625% * 99.9% * 99.999999% * 99.9992% 
 
 Ejercicio T2.2
 
-Buscar frameworks, modulos y librerias para diferentes lenguajes que permitan hacer aplicaciones altamentes disponibles con relativa facilidad.
+Buscar frameworks, módulos y librerías para diferentes lenguajes que permitan hacer aplicaciones altamentes disponibles con relativa facilidad.
 
-A nivel de planificacion o subsistema encuentro software de planificacion y gestión de recursos como LSF,CODINE y CONDOR.
+A nivel de planificación o subsistema encuentro software de planificación y gestión de recursos como LSF,CODINE y CONDOR.
 
 Como entornos y herramientas de programacion paralela encuentro:
 -Programacion : MPI, PVM, OpenMP, DSM, ...
@@ -65,7 +65,7 @@ Ejercicio T2.3
 
 ¿Como analizar el nivel de carga de cada uno de los subsistemas en el servidor? Buscar herramientas que nos faciliten esta labor.
 
-Se puede encontrar diferentes tipos de monitorizacion, tanto a nivel de sistema como de aplicacion, y dentro de los de sistema seran por eventos o por muestreo pudiendo ser de tipo software,hardware o hibrido.
+Se puede encontrar diferentes tipos de monitorizacion, tanto a nivel de sistema como de aplicacion, y dentro de los de sistema seran por eventos o por muestreo pudiendo ser de tipo software,hardware o híbrido.
 
 A nivel de sistema que es lo que nos interesa se encuentra uptime, ps, top, vmstat, mpstat, iostat y otros mas completos como sar o sarcheck dentro de los muchos que hay para monitorizar.
 
