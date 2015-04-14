@@ -78,3 +78,7 @@ Se han realizado 5 medidas para cada máquina siendo su media y su desviación l
 |192.168.2.131| 0,708822968         |       0.0      |   0,001788854        | 
 
 
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica4/ab.png)
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica4/httperf.png)
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica4/OpenLoad.png)
+
