@@ -21,11 +21,11 @@ Se han realizado 5 medidas para cada máquina siendo su media y su desviación l
 
 -Desviación estandar
 
-|**Máquina**|Time taken for tests(s)]|Requests per second|Time per request(ms)|Failed requests|
-|:----------:|:---------------:|:-----------------:|:---------------:|
-|192.168.2.128|  2,137423145       |       180,6480005       |    0,021243823       |  0  |
-|192.168.2.130| 0,471661637         |       29,49641504     |    0,00484768       |  0  |
-|192.168.2.131| 0,985280011         |       86,39511578      |   0,009705668       |   0  |
+|**Máquina**|Time taken for tests(s)|Requests per second|Time per request(ms)|Failed requests|
+|:----------:|:---------------:|:-----------------:|:---------------:|:------------:|
+|192.168.2.128|  2,137423145  | 180,6480005 | 0,021243823 |  0  |
+|192.168.2.130| 0,471661637  |  29,49641504     | 0,00484768  |  0  |
+|192.168.2.131| 0,985280011  |  86,39511578  |   0,009705668   |   0  |
 
 ##Pruebas HTTPERF
 
