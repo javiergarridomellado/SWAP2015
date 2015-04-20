@@ -2,6 +2,8 @@
 - FRANCISCO JAVIER GARRIDO MELLADO 
 - HUGO BARZANO CRUZ
 
+Los resultados de estas pruebas corresponden a la ejecución de *AB*, *HTTPERF* y *OpenWebLoad* contra tres máquinas, una será la que aloje la página web, otra un balanceador *Nginx* y por último un balanceador *haproxy*. La página utilizada es una estática muy básica, por tanto, los resultados obtenidos solo son de utilidad en este ambito. Por otra parte mi compañero ha realizado las pruebas con el *script* proporcionado por el profesor, estos pueden consultarse en la siguiente url *https://github.com/hugobarzano/swap2015.git*
+
 ##Pruebas AB
 
 **Comandos:**
@@ -81,4 +83,14 @@ Se han realizado 5 medidas para cada máquina siendo su media y su desviación l
 ![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica4/ab.png)
 ![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica4/httperf.png)
 ![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica4/OpenLoad.png)
+
+##Conclusiones:
+**AB:**
+-En estas mediciones donde se ha usado una página estática básica como web se obtiene unos resultados *Time taken for tests* , *Requests per second* y *Time per requests* muy parecidos para una sola máquina y el balanceador *haproxy*, siendo peores para el balanceador *nginx*.Sin embargo, mi compañero **Hugo Barzano** tras haber aplicado el *script proporcionado por el profesor* si obtiene unos resultados mejores en los dos balanceadores que en la máquina sola. Otro dato curioso es que sin usar *scripts* no se registra ningun *Failed Requests* , no siendo asi en el caso de mi compañero de grupo.
+
+**HTTPERF:**
+-En este caso los resultados no son nada convincentes, tras haber consultado al profesor he decidido dejarlos por su indicación ya que hay muchos compañeros con el mismo resultado, este no es otro que obtener el mismo numero de *Total connections*, *replies*, *Request rate( req/s )* y *Errors total* en las tres casos estudiados. El resultado de mi compañero con el script es practicamente el mismo tambien, siendo ligeramente mejor con los balanceadores.
+
+**OpenLoad:**
+En este caso el resultado es favorable para una máquina sola, registrandose un mayor número de *Transactions Per Second* en esta, pero tambien obteniendose una mayor desviación. Nuevamente, al aplicar el script el resultado es mejor en los balanceadores que en la máquina sola.
 
