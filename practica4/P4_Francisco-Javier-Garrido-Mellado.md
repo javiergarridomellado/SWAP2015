@@ -115,4 +115,4 @@ La gráfica obtenida es la siguiente:
 
 ![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica4/grafica_siege.png)
 
-Puede verse como ahora se obtiene un resultado ligeramente mejor en el servidor haproxy, y en los otros dos casos muy parecidos.
+Puede verse como ahora se obtiene un resultado ligeramente mejor en el servidor haproxy, y en los otros dos casos parecidos.
