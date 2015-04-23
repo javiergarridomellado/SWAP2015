@@ -94,3 +94,25 @@ Se han realizado 5 medidas para cada máquina siendo su media y su desviación l
 **OpenLoad:**
 En este caso el resultado es favorable para una máquina sola, registrandose un mayor número de *Transactions Per Second* en esta, pero tambien obteniendose una mayor desviación. Nuevamente, al aplicar el script el resultado es mejor en los balanceadores que en la máquina sola.
 
+##Añadido:
+**Siege**
+
+**Comandos:**
+ - Para una máquina servidora se ha ejecutado **siege -b -t60s http://192.168.2.128/**
+ - Para la maquina balanceadora **nginx** se ha ejecutado **siege -b -t60s http://192.168.2.130/**
+ - Para la maquina balanceadora **haproxy** a se ha ejecutado **siege -b -t60s http://192.168.2.131/**
+
+Se han obtenido para una máquina el siguiente resultado:
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica4/siege1921682128.png)
+
+Para la máquina balanceadora *nginx* :
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica4/siege_nginx.png)
+
+Para la máquina balanceadora *haproxy* :
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica4/siege_haproxy.png)
+
+La gráfica obtenida es la siguiente:
+
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica4/grafica_siege.png)
+
+Puede verse como ahora se obtiene un resultado ligeramente mejor en el servidor haproxy, y en los otros dos casos muy parecidos.
