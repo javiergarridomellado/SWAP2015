@@ -38,6 +38,7 @@ En la máquina principal:
 - Se reinicia el servicio mediante el comando **/etc/init.d/mysql restart**
 
 En la máquina de replicación se realiza exactamente lo mismo con el fichero */etc/mysql/my.cnf* con la salvedad de que **server-id=2**.
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica5/replicacion_maestroesclavo1.png)
 
 Seguidamente se accede a *MySQL* de la principal mediante el comando *mysql -uroot -p*.
 
@@ -50,13 +51,31 @@ Se crea el usuario esclavo mediante la siguiente sentencia:
 
 y se obtiene los dates de la base de datos ejecutando **SHOW MASTER STATUS;**.
 
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica5/replicacion_enmaestro.png)
+
+
+
 A continuación se accede a *MySQL* de la máquina esclava y se ejecuta la siguiente sentencia:
 **CHANGE MASTER TO MASTER_HOST='192.168.2.128',**
 **MASTER_USER='esclavo', MASTER_PASSWORD='esclavo',**
 **MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=501,**
 **MASTER_PORT=3306;**
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica5/replicacion_enesclavo.png)
 
-y se arranca el servicio con la sentencia **START SLAVE;** , por último solo queda desbloquear la base de datos en la máquina principal haciendo **UNLOCK TABLES;** y cualquier cambio que se haga se verá reflejado tal y como ilustro en las imágenes.
+y se arranca el servicio con la sentencia **START SLAVE;** , se comprueba y por último solo queda desbloquear la base de datos en la máquina principal haciendo **UNLOCK TABLES;** y cualquier cambio que se haga se verá reflejado tal y como ilustro en las imágenes.
+
+Comprobación en la máquina esclava:
+
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica5/Comprobacion_esclavo.png)
+
+Actualización de base de datos maestra:
+
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica5/cambio_en_maestro.png)
+
+Replicación automática en la base de datos esclava:
+
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica5/cambios_esclavo.png)
+
 
 
 
