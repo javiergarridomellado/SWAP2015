@@ -36,6 +36,7 @@ Al reiniciar puede comprobarse que el RAID queda de manera impoluta ( salvo el n
 ![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica6/eliminardisco.png)
 ![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica6/solo1discoactivo.png)
 - Añado el disco duro que en el paso anterior eliminé ejecutando *mdadm /dev/md127 -a /dev/sdb*
-*Nota:con el comando watch se monitoriza la simulación del fallo y su posterior conexión, al tener un solo terminal no puede observarse.*
 ![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica6/anadirdiscodurofallido.png)
+
+*Nota:con el comando watch se monitoriza la simulación del fallo y su posterior conexión, al tener un solo terminal no puede observarse la evolución en tiempo real.*
 
