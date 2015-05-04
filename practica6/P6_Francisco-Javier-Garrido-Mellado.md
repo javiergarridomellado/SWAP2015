@@ -21,13 +21,21 @@
 Al reiniciar y comprobar puede observarse que queda el RAID de manera impoluta ( salvo el nombre que motivo que desconozco pasa de md0 a md127 ).
 ![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica6/reinicio_mdadmdetail.png)
 
+#Simulacion de rotura de un disco duro del RAID
+
 - Para comprobar el funcionamiento del RAID simulando uno de los discos he realizado lo siguiente:
 
 - He desconectado un disco duro de mi servidor Ubuntu. Puede observarse en las imágenes como se monitoriza la desconexión y su posterior conexión.Los pasos seguidos son:
 - Se ejecuta el monitor con el comando *watch -n2 cat /proc/mdstat*
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica6/watch.png)
 - Con el comando *mdadm --detail /dev/md127* se ve el RAID montado con los correspondientes discos duros activos e inactivos.
 - Simulo fallo de un disco duro con el comando *mdadm --manage --set-faulty /dev/md127 /dev/sdb*
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica6/simulacionfallosdb.png)
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica6/watch_seobservafallodiscoduro.png)
 - Elimino el disco duro que he supuesto que falla( si realmente asi fuese tambien habria que realizar el paso anterior) ejecutando *mdadm /dev/md127 -r /dev/sdb*
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica6/eliminardisco.png)
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica6/solo1discoactivo.png)
 - Añado el disco duro que en el paso anterior eliminé ejecutando *mdadm /dev/md127 -a /dev/sdb*
 *Nota:con el comando watch se monitoriza la simulación del fallo y su posterior conexión, al tener un solo terminal no puede observarse.*
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica6/anadirdiscodurofallido.png)
 
