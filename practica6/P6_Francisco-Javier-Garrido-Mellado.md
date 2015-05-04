@@ -23,7 +23,7 @@ Al reiniciar puede comprobarse que el RAID queda de manera impoluta ( salvo el n
 
 ##Simulacion de rotura de un disco duro del RAID
 
-- Para comprobar el funcionamiento del RAID simulando uno de los discos he realizado lo siguiente:
+- Para comprobar el funcionamiento del RAID simulando la rotura de uno de los discos he realizado lo siguiente:
 
 - He desconectado un disco duro de mi servidor Ubuntu. Puede observarse en las imágenes como se monitoriza la desconexión y su posterior conexión.Los pasos seguidos son:
 - Se ejecuta el monitor con el comando *watch -n2 cat /proc/mdstat*
