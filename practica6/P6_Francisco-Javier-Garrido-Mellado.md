@@ -2,9 +2,9 @@
 - FRANCISCO JAVIER GARRIDO MELLADO 
 - HUGO BARZANO CRUZ
 
-##Realizar configuración de RAID1 con dos discos duros.
+#Realizar configuración de RAID1 con dos discos duros.
 
-#Pasos( como root ):
+##Pasos( como root ):
 
 - El primer paso ha sido añadir los dos discos duros, para ello con la máquina virtual apagada se han añadido los que seran los discos *sdb* y *sdc* en el sistema ( *ls /dev/* ).
 - El segundo paso con la máquina virtual ya arrancada ha sido instalar el software de *RAID* para Linux, en este caso *mdadm*, para ello se ejecuta el comando *apt-get install mdadm* .
@@ -21,7 +21,7 @@
 Al reiniciar y comprobar puede observarse que queda el RAID de manera impoluta ( salvo el nombre que motivo que desconozco pasa de md0 a md127 ).
 ![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica6/reinicio_mdadmdetail.png)
 
-#Simulacion de rotura de un disco duro del RAID
+##Simulacion de rotura de un disco duro del RAID
 
 - Para comprobar el funcionamiento del RAID simulando uno de los discos he realizado lo siguiente:
 
