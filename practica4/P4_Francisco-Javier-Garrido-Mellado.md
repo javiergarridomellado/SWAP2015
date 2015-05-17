@@ -113,6 +113,9 @@ Para la máquina balanceadora *haproxy* :
 
 La gráfica obtenida es la siguiente:
 
-![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica4/grafica_siege.png)
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/practica4/resultados_siege.png)
 
 Puede verse como ahora se obtiene un resultado ligeramente mejor en el servidor haproxy, y en los otros dos casos parecidos.
+
+##Conclusion Final:
+Tras haber ejecutado ab y siege tanto en máquinas que devuelven una página estática como una dinámica ( en el trabajo realizado y en la parte práctica de mi compañero Hugo Barzano ) he llegado a la conclusión de lo acertado que es el uso de un balanceador cuando se devuelve una página pesada o de tipo dinámico, en este caso los resultados que ofrece el balanceador frente a una máquina sola si son muy a tener en cuenta, cosa que no ocurra cuando se sirve una página estatica de un tamaño muy reducido como puede observarse en las mediciones.
