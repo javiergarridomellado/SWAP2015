@@ -11,3 +11,13 @@ A continuación diferentes balanceadores de la marca Barracuda con sus caracter�
 ![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/trabajos_clase/balanceadores_precios.png)
 ![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/trabajos_clase/balanceadores2.png)
 
+**T4.2.Instala y configura en una máquina virtual el balanceador ZenLoadBalancer.**
+
+Unas imágenes sobre la configuración de ZenLoadBalancer bajo una distro linux en una máquina virtual mia.
+
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/trabajos_clase/config_maquinabalanceadora_zen.png)
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/trabajos_clase/cluster_zenload.png)
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/trabajos_clase/configuracion_zenload_pesos.png)
+![img](https://github.com/javiergarridomellado/SWAP2015/blob/master/trabajos_clase/configuracion_zenload_roundrobin.png)
+
+
